@@ -42,8 +42,8 @@ public class Trader<T> {
 
     public Trader(int money){
         this.money = money;
-        inventory = new ArrayList<>();
-        wishlist = new ArrayList<>();
+        this.inventory = new ArrayList<>();
+        this.wishlist = new ArrayList<>();
     }
 
 
@@ -51,8 +51,8 @@ public class Trader<T> {
     /* TODO: Implement the method addToWishlist that takes an
      *       object of type T and adds it to this Trader's wishlist.
      */
-    public void addToWishlist(T item){
-        wishlist.add(item);
+    public void addToWishlist(T object){
+        this.wishlist.add(object);
     }
 
 
